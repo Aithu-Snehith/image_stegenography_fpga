@@ -1,0 +1,106 @@
+# #### This file is auto-generated from icosoc.py. Do not edit! ####
+
+# ++ 10-std ++
+
+set_io CLKIN R9
+
+set_io LED1 C8
+set_io LED2 F7
+set_io LED3 K9
+
+set_io SPI_FLASH_CS   R12
+set_io SPI_FLASH_SCLK R11
+set_io SPI_FLASH_MOSI P12
+set_io SPI_FLASH_MISO P11
+
+set_io RASPI_11 D5
+set_io RASPI_12 D6
+set_io RASPI_15 C6
+set_io RASPI_16 C7
+set_io RASPI_19 A6
+set_io RASPI_21 A7
+set_io RASPI_26 D4
+set_io RASPI_35 D7
+set_io RASPI_36 D9
+set_io RASPI_38 C9
+set_io RASPI_40 C10
+
+set_io SRAM_A0  N2
+set_io SRAM_A1  K5
+set_io SRAM_A2  J5
+set_io SRAM_A3  M5
+set_io SRAM_A4  P4
+set_io SRAM_A5  N5
+set_io SRAM_A6  P5
+set_io SRAM_A7  P7
+set_io SRAM_A8  M6
+set_io SRAM_A9  P6
+set_io SRAM_A10 T8
+set_io SRAM_A11 T1
+set_io SRAM_A12 P2
+set_io SRAM_A13 R1
+set_io SRAM_A14 N3
+set_io SRAM_A15 P1
+set_io SRAM_A16 M11
+set_io SRAM_A17 P10
+set_io SRAM_A18 P8
+
+set_io SRAM_D0  T2
+set_io SRAM_D1  R3
+set_io SRAM_D2  T3
+set_io SRAM_D3  R4
+set_io SRAM_D4  R5
+set_io SRAM_D5  T5
+set_io SRAM_D6  R6
+set_io SRAM_D7  T6
+set_io SRAM_D8  N4
+set_io SRAM_D9  M4
+set_io SRAM_D10 L6
+set_io SRAM_D11 M3
+set_io SRAM_D12 L4
+set_io SRAM_D13 L3
+set_io SRAM_D14 K4
+set_io SRAM_D15 K3
+
+set_io SRAM_CE  M7
+set_io SRAM_WE  T7
+set_io SRAM_OE  L5
+set_io SRAM_LB  J4
+set_io SRAM_UB  J3
+
+set_io HRAM_CK   N10
+# set_io HRAM_RWDS P8  # SRAM_A18
+# set_io HRAM_DQ0  T2  # SRAM_D0
+# set_io HRAM_DQ1  R3  # SRAM_D1
+# set_io HRAM_DQ2  T3  # SRAM_D2
+# set_io HRAM_DQ3  R4  # SRAM_D3
+# set_io HRAM_DQ4  R5  # SRAM_D4
+# set_io HRAM_DQ5  T5  # SRAM_D5
+# set_io HRAM_DQ6  R6  # SRAM_D6
+# set_io HRAM_DQ7  T6  # SRAM_D7
+# set_io HRAM_CS2n P10 # SRAM_A17
+
+# ++ 12-iopins ++
+set_io pmod3_3 L7
+set_io pmod3_2 G5
+set_io pmod2_10 B5
+set_io pmod2_9 B3
+set_io pmod2_8 B6
+set_io pmod2_7 B7
+set_io pmod2_4 B4
+set_io pmod2_3 C3
+set_io pmod2_2 A2
+set_io pmod2_1 A5
+set_io pmod1_10 A11
+set_io pmod1_9 A10
+set_io pmod1_8 A9
+set_io pmod1_7 B8
+set_io pmod1_4 B11
+set_io pmod1_3 B10
+set_io pmod1_2 B9
+set_io pmod1_1 D8
+set_io C16 C16
+set_io pmod4_1 T15
+set_io pmod4_2 T14
+set_io pmod4_3 T11
+set_io pmod4_4 R10

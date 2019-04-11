@@ -1,0 +1,128 @@
+
+icetime topological timing analysis report
+==========================================
+
+Report for critical path:
+-------------------------
+
+        lc40_19_13_7 (LogicCell40) [clk] -> lcout: 0.640 ns
+     0.640 ns net_74302 (cpu.mem_do_rinst)
+        odrv_19_13_74302_78276 (Odrv4) I -> O: 0.372 ns
+        t21795 (Span4Mux_h0) I -> O: 0.147 ns
+        t21794 (Span4Mux_v4) I -> O: 0.372 ns
+        t21793 (Span4Mux_v2) I -> O: 0.252 ns
+        t21792 (LocalMux) I -> O: 0.330 ns
+        inmux_20_16_82878_82905 (InMux) I -> O: 0.260 ns
+        lc40_20_16_2 (LogicCell40) in1 -> lcout: 0.400 ns
+     2.772 ns net_78743 ($abc$57322$techmap\cpu.$logic_and$../../common/picorv32.v:332$1367_Y)
+        odrv_20_16_78743_78650 (Odrv4) I -> O: 0.372 ns
+        t23568 (Span4Mux_v4) I -> O: 0.372 ns
+        t23609 (Span4Mux_h0) I -> O: 0.147 ns
+        t23608 (Span4Mux_v1) I -> O: 0.203 ns
+        t23607 (LocalMux) I -> O: 0.330 ns
+        inmux_19_10_78073_78103 (InMux) I -> O: 0.260 ns
+        t2808 (CascadeMux) I -> O: 0.000 ns
+        lc40_19_10_4 (LogicCell40) in2 -> lcout: 0.379 ns
+     4.834 ns net_73930 ($abc$57322$techmap\cpu.$logic_and$../../common/picorv32.v:342$1376_Y)
+        t21641 (LocalMux) I -> O: 0.330 ns
+        inmux_20_10_82133_82167 (InMux) I -> O: 0.260 ns
+        lc40_20_10_2 (LogicCell40) in1 -> lcout: 0.400 ns
+     5.823 ns net_78005 (cpu.mem_xfer)
+        odrv_20_10_78005_57751 (Odrv12) I -> O: 0.540 ns
+        t22900 (Sp12to4) I -> O: 0.449 ns
+        t22899 (Span4Mux_v4) I -> O: 0.372 ns
+        t22898 (Span4Mux_v4) I -> O: 0.372 ns
+        t22919 (Span4Mux_h0) I -> O: 0.147 ns
+        t22918 (Span4Mux_v0) I -> O: 0.203 ns
+        t22959 (Span4Mux_v1) I -> O: 0.203 ns
+        t22960 (LocalMux) I -> O: 0.330 ns
+        inmux_17_19_71027_71045 (InMux) I -> O: 0.260 ns
+        t2546 (CascadeMux) I -> O: 0.000 ns
+        lc40_17_19_2 (LogicCell40) in2 -> lcout: 0.379 ns
+     9.077 ns net_66882 ($abc$57322$n3376)
+        odrv_17_19_66882_66789 (Odrv4) I -> O: 0.372 ns
+        t19974 (Span4Mux_h0) I -> O: 0.147 ns
+        t19973 (Span4Mux_h0) I -> O: 0.147 ns
+        t19972 (Span4Mux_v3) I -> O: 0.337 ns
+        t19971 (LocalMux) I -> O: 0.330 ns
+        inmux_17_19_70998_71062 (InMux) I -> O: 0.260 ns
+        lc40_17_19_5 (LogicCell40) in1 -> lcout: 0.400 ns
+    11.069 ns net_66885 (cpu.mem_rdata_latched[1])
+        odrv_17_19_66885_67012 (Odrv12) I -> O: 0.540 ns
+        t19956 (Sp12to4) I -> O: 0.449 ns
+        t19955 (LocalMux) I -> O: 0.330 ns
+        inmux_20_19_83240_83262 (InMux) I -> O: 0.260 ns
+        lc40_20_19_0 (LogicCell40) in1 -> lcout: 0.400 ns
+    13.047 ns net_79110 ($abc$57322$techmap\cpu.$logic_or$../../common/picorv32.v:347$1396_Y_inv)
+        t23754 (LocalMux) I -> O: 0.330 ns
+        inmux_20_19_83236_83303 (InMux) I -> O: 0.260 ns
+        lc40_20_19_7 (LogicCell40) in0 -> lcout: 0.449 ns
+    14.085 ns net_79117 ($abc$57322$n3447)
+        odrv_20_19_79117_83091 (Odrv4) I -> O: 0.372 ns
+        t23810 (Span4Mux_h0) I -> O: 0.147 ns
+        t23809 (Span4Mux_v3) I -> O: 0.337 ns
+        t23808 (LocalMux) I -> O: 0.330 ns
+        inmux_20_17_83002_83051 (InMux) I -> O: 0.260 ns
+        lc40_20_17_6 (LogicCell40) in0 -> lcout: 0.449 ns
+    15.978 ns net_78870 ($abc$57322$n3547)
+        odrv_20_17_78870_82843 (Odrv4) I -> O: 0.372 ns
+        t23671 (Span4Mux_h3) I -> O: 0.231 ns
+        t23670 (LocalMux) I -> O: 0.330 ns
+        inmux_18_14_74462_74517 (InMux) I -> O: 0.260 ns
+        lc40_18_14_4 (LogicCell40) in1 -> lcout: 0.400 ns
+    17.570 ns net_70346 ($abc$57322$techmap\cpu.$3\set_mem_do_rdata[0:0])
+        odrv_18_14_70346_74563 (Odrv4) I -> O: 0.372 ns
+        t20630 (Span4Mux_h3) I -> O: 0.231 ns
+        t20629 (LocalMux) I -> O: 0.330 ns
+        inmux_15_14_62236_62263 (InMux) I -> O: 0.260 ns
+        lc40_15_14_0 (LogicCell40) in0 -> lcout: 0.449 ns
+    19.212 ns net_58112 ($abc$57322$auto$dff2dffe.cc:175:make_patterns_logic$37543)
+        odrv_15_14_58112_58017 (Odrv4) I -> O: 0.372 ns
+        t17063 (Span4Mux_h0) I -> O: 0.147 ns
+        t17062 (Span4Mux_v2) I -> O: 0.252 ns
+        t17061 (LocalMux) I -> O: 0.330 ns
+        inmux_14_17_58523_58561 (InMux) I -> O: 0.260 ns
+        lc40_14_17_1 (LogicCell40) in0 -> lcout: 0.449 ns
+    21.021 ns net_54405 ($abc$57322$auto$dff2dffe.cc:175:make_patterns_logic$37860)
+        odrv_14_17_54405_58245 (Odrv12) I -> O: 0.540 ns
+        t15995 (Sp12to4) I -> O: 0.449 ns
+        t15994 (Span4Mux_h0) I -> O: 0.147 ns
+        t15993 (Span4Mux_h4) I -> O: 0.316 ns
+        t15992 (Span4Mux_h4) I -> O: 0.316 ns
+        t15991 (Span4Mux_h4) I -> O: 0.316 ns
+        t15990 (Span4Mux_v4) I -> O: 0.372 ns
+        t15989 (Span4Mux_v4) I -> O: 0.372 ns
+        t15988 (Span4Mux_v4) I -> O: 0.372 ns
+        t16001 (Span4Mux_h0) I -> O: 0.147 ns
+        t16000 (Span4Mux_v4) I -> O: 0.372 ns
+        t15999 (Span4Mux_h0) I -> O: 0.147 ns
+        t16012 (Span4Mux_h0) I -> O: 0.147 ns
+        t16011 (Span4Mux_h2) I -> O: 0.203 ns
+        t16010 (IoSpan4Mux) I -> O: 0.323 ns
+        t16009 (IoSpan4Mux) I -> O: 0.323 ns
+        t16008 (Span4Mux_h4) I -> O: 0.316 ns
+        t16007 (Span4Mux_v2) I -> O: 0.252 ns
+        t16006 (LocalMux) I -> O: 0.330 ns
+        inmux_7_13_30166_30243 (CEMux) I -> O: 0.603 ns
+    27.382 ns net_30243 ($abc$57322$auto$dff2dffe.cc:175:make_patterns_logic$37860)
+        lc40_7_13_7 (LogicCell40) ce [setup]: 0.000 ns
+    27.382 ns net_26053 (cpu.reg_op1[27])
+
+Resolvable net names on path:
+     0.640 ns ..  2.372 ns cpu.mem_do_rinst
+     2.772 ns ..  4.455 ns $abc$57322$techmap\cpu.$logic_and$../../common/picorv32.v:332$1367_Y
+     4.834 ns ..  5.423 ns $abc$57322$techmap\cpu.$logic_and$../../common/picorv32.v:342$1376_Y
+     5.823 ns ..  8.698 ns cpu.mem_xfer
+     9.077 ns .. 10.669 ns $abc$57322$n3376
+    11.069 ns .. 12.647 ns cpu.mem_rdata_latched[1]
+    13.047 ns .. 13.636 ns $abc$57322$techmap\cpu.$logic_or$../../common/picorv32.v:347$1396_Y_inv
+    14.085 ns .. 15.530 ns $abc$57322$n3447
+    15.978 ns .. 17.171 ns $abc$57322$n3547
+    17.570 ns .. 18.763 ns $abc$57322$techmap\cpu.$3\set_mem_do_rdata[0:0]
+    19.212 ns .. 20.572 ns $abc$57322$auto$dff2dffe.cc:175:make_patterns_logic$37543
+    21.021 ns .. 27.382 ns $abc$57322$auto$dff2dffe.cc:175:make_patterns_logic$37860
+                  lcout -> cpu.reg_op1[27]
+
+Total number of logic levels: 12
+Total path delay: 27.38 ns (36.52 MHz)
+
