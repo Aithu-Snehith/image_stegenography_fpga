@@ -4,9 +4,12 @@ import numpy
 numpy.set_printoptions(threshold=sys.maxsize)
 from scipy.misc import imread, imsave
 
-message = "snehith is here"
-img_actual = imread("inp_img.png")
-img = img_actual[:,:,0]
+message = "snehith"
+#img_actual = imread("inp_img.png")
+#img = img_actual[:,:,0]
+
+img = np.random.randint(0,255,(32,32))
+
 print(img.shape)
 
 def strBin(s_str):
@@ -68,13 +71,14 @@ file_v = r'''module	helloworld(i_clk,
  reg[''' + str(msg_bin_len - 1) + r''':0] message;
  	initial message = ''' + str(msg_bin_len) + r''''b''' + msg_bin + r''';
 
-	reg [7:0] img [0:''' + str(len(img_flat)-1) + r''']
+	reg [7:0] img [0:''' + str(len(img_flat)-1) + r'''];
+	integer ii;
 
 	initial begin
 		'''
 
 for i in range(len(img_flat)):
-	file_v = file_v + r'''img[''' + str(len(img_flat) - i - 1) + r'''] = 8'b''' + '{0:08b}'.format(img_flat[(-1*i)-1]) + r''';
+	file_v = file_v + r'''img[''' + str(len(img_flat) - i - 1) + r'''] <= 8'b''' + '{0:08b}'.format(img_flat[(-1*i)-1]) + r''';
 		'''
 
 file_v = file_v + r'''
@@ -92,7 +96,7 @@ always @(posedge i_clk)
 
 wire		tx_break, tx_busy;
 reg		tx_stb;
-reg	[3:0]	tx_index;
+reg	[''' + str(int(np.log2(len(img_flat)-1))) + r''':0]	tx_index;
 reg	[7:0]	tx_data;
 
 assign	tx_break = 1'b0;
@@ -102,7 +106,7 @@ always @(posedge i_clk)
 	if ((tx_stb)&&(!tx_busy))
 		tx_index <= tx_index + 1'b1;
 always @(posedge i_clk)
-	tx_data <= message[tx_index];
+	tx_data <= img[tx_index];
 
 initial	tx_stb = 1'b0;
 always @(posedge i_clk)
