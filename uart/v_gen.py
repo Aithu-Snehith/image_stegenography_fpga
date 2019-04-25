@@ -4,8 +4,12 @@ import numpy
 numpy.set_printoptions(threshold=sys.maxsize)
 from scipy.misc import imread, imsave
 
-message = "snehith is here"
-img = imread("inp.png")
+#print()
+message = str(raw_input("Enter message to be hidden :"))
+img_path = str(raw_input("Enter image file name :"))
+
+#message = "snehith is here"
+img = imread(img_path)
 
 # img = np.random.randint(0,255,(32,32))
 
