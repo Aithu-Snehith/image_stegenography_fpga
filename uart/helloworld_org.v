@@ -73,7 +73,7 @@ module	helloworld(i_clk,
 	assign	o_ledg = !ledctr[24];
 
 	reg	[7:0]	message	[0:15];
-	
+
 	initial begin
 		message[ 0] = "H";
 		message[ 1] = "e";
@@ -551,4 +551,3 @@ module txuartlite(i_clk, i_wr, i_data, o_uart_tx, o_busy);
 
 `endif // Verific SVA
 endmodule
-
