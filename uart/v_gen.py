@@ -4,11 +4,10 @@ import numpy
 numpy.set_printoptions(threshold=sys.maxsize)
 from scipy.misc import imread, imsave
 
-message = "snehith"
-#img_actual = imread("inp_img.png")
-#img = img_actual[:,:,0]
+message = "snehith is here"
+img = imread("inp.png")
 
-img = np.random.randint(0,255,(32,32))
+# img = np.random.randint(0,255,(32,32))
 
 print(img.shape)
 
@@ -28,12 +27,12 @@ def strBin(s_str):
 msg_bin = strBin(message)
 msg_bin_len = len(msg_bin)
 msg_len = int(msg_bin_len/8)
-print(msg_len)
+
 img_flat = img.flatten()
-print(img_flat[-1],img_flat[-2])
+print(img_flat[-1], img_flat[-2])
 img_flat[-1] = 10*(img_flat[-1]/10) + msg_len%10;
 img_flat[-2] = 10*(img_flat[-2]/10) + msg_len/10;
-print(img_flat[-1],img_flat[-2])
+print(img_flat[-1], img_flat[-2])
 file_v = r'''module	helloworld(i_clk,
 			o_ledg,
 			i_rts, i_uart_rx, o_cts,
@@ -79,15 +78,27 @@ file_v = r'''module	helloworld(i_clk,
 
 for i in range(len(img_flat)):
 	file_v = file_v + r'''img[''' + str(len(img_flat) - i - 1) + r'''] <= 8'b''' + '{0:08b}'.format(img_flat[(-1*i)-1]) + r''';
-		'''
+	'''
 
 file_v = file_v + r'''
+end
 
+always @(posedge i_clk) begin
   for(ii=0; ii<''' + str(msg_bin_len) + r'''; ii=ii+1) begin
     img[''' + str(len(img_flat) - 3) + r'''-ii][0] <= message[''' + str(msg_bin_len - 1) + r'''-ii];
 	end
-end
+end'''
 
+# for i in range(0,msg_bin_len):
+# 	file_v = file_v + r'''img[''' + str(len(img_flat) - 3 - i) + r'''][0] <= message[''' + str(msg_bin_len-1-i) + r'''];
+# 		'''
+
+# file_v = file_v + r'''
+# end
+#
+# assign ''' + temp_str_img + r''' = ''' + temp_str_msg + ';'
+
+file_v = file_v + r'''
 
 reg	[27:0]	counter;
 initial	counter = 28'hffffff0;
