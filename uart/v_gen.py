@@ -28,12 +28,12 @@ def strBin(s_str):
 msg_bin = strBin(message)
 msg_bin_len = len(msg_bin)
 msg_len = int(msg_bin_len/8)
-
+print(msg_len)
 img_flat = img.flatten()
-
-img_flat[-1] = (img_flat[-1]/10) + msg_len%10;
-img_flat[-2] = (img_flat[-2]/10) + msg_len/10;
-
+print(img_flat[-1],img_flat[-2])
+img_flat[-1] = 10*(img_flat[-1]/10) + msg_len%10;
+img_flat[-2] = 10*(img_flat[-2]/10) + msg_len/10;
+print(img_flat[-1],img_flat[-2])
 file_v = r'''module	helloworld(i_clk,
 			o_ledg,
 			i_rts, i_uart_rx, o_cts,
