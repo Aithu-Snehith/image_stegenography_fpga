@@ -36,7 +36,7 @@
 ################################################################################
 ##
 ##
-all: helloworld speechfifo
+all: steg
 
 # GNU Make automatic variables (since I can never remember these ...)
 # $@	- name of the target
@@ -47,12 +47,11 @@ all: helloworld speechfifo
 %.asc: %.blif %.pcf
 	arachne-pnr -d 8k -r -P ct256 -p $*.pcf -o $@ $<
 %.bin: %.asc
-	icetime -d hx8k -c 100 $<
+	icetime -d hx8k -c 40 $<
 	icepack $< $@
 
-.PHONY: helloworld speechfifo
-helloworld: helloworld.bin
-speechfifo: speechfifo.bin
+.PHONY: steg
+steg: steg.bin
 
 clean:
 	rm -f *.blif *.asc *.bin

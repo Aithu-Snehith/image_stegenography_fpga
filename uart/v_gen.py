@@ -559,5 +559,5 @@ always @(*)
 `endif // Verific SVA
 endmodule'''
 
-with open('helloworld.v', 'w') as f:
+with open('steg.v', 'w') as f:
     f.write(file_v)
