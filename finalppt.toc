@@ -1,0 +1,22 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Introduction to FPGA}{2}{0}{1}
+\beamer@sectionintoc {2}{Introduction}{3}{0}{2}
+\beamer@sectionintoc {3}{Project Scope}{4}{0}{3}
+\beamer@sectionintoc {4}{Methodology}{5}{0}{4}
+\beamer@sectionintoc {5}{Rundown on Algorithm}{6}{0}{5}
+\beamer@sectionintoc {6}{Hardware Connections}{7}{0}{6}
+\beamer@sectionintoc {7}{Installation of open-source tools}{8}{0}{7}
+\beamer@sectionintoc {8}{Installation of Dependencies}{9}{0}{8}
+\beamer@sectionintoc {9}{Icestorm installation}{10}{0}{9}
+\beamer@sectionintoc {10}{Arachne installation}{11}{0}{10}
+\beamer@sectionintoc {11}{Yosys Installation}{12}{0}{11}
+\beamer@sectionintoc {12}{Icoprog Installation}{13}{0}{12}
+\beamer@sectionintoc {13}{Implementation}{14}{0}{13}
+\beamer@sectionintoc {14}{Implementation details}{15}{0}{14}
+\beamer@sectionintoc {15}{Execution}{16}{0}{15}
+\beamer@sectionintoc {16}{Execution}{17}{0}{16}
+\beamer@sectionintoc {17}{Execution}{18}{0}{17}
+\beamer@sectionintoc {18}{Changes after LSB Insertion}{19}{0}{18}
+\beamer@sectionintoc {19}{Alternative Methods}{20}{0}{19}
+\beamer@sectionintoc {20}{Alternative Methods}{21}{0}{20}
+\beamer@sectionintoc {21}{References}{22}{0}{21}

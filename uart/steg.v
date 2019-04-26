@@ -32,14 +32,14 @@ module	helloworld(i_clk,
 			ledctr <= ledctr + 1'b1;
 	assign	o_ledg = !ledctr[24];
 
- reg[119:0] message;
- 	initial message = 120'b011100110110111001100101011010000110100101110100011010000010000001101001011100110010000001101000011001010111001001100101;
+ reg[87:0] message;
+ 	initial message = 88'b0110100001101001001000000110010101110110011001010111001001111001011011110110111001100101;
 
 	reg [7:0] img [0:1023];
 	integer ii;
 
 	initial begin
-		img[1023] <= 8'b01000001;
+		img[1023] <= 8'b00111101;
 	img[1022] <= 8'b00110011;
 	img[1021] <= 8'b00110101;
 	img[1020] <= 8'b00100011;
@@ -1067,8 +1067,8 @@ module	helloworld(i_clk,
 end
 
 always @(posedge i_clk) begin
-  for(ii=0; ii<120; ii=ii+1) begin
-    img[1021-ii][0] <= message[119-ii];
+  for(ii=0; ii<88; ii=ii+1) begin
+    img[1021-ii][0] <= message[87-ii];
 	end
 end
 
